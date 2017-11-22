@@ -31,7 +31,12 @@
 		<Compiler>
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
+			<Add directory="libs/include" />
 		</Compiler>
+		<Linker>
+			<Add directory="libs/bin" />
+			<Add directory="libs/lib" />
+		</Linker>
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<code_completion />
